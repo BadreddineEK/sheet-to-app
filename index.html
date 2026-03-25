@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Google Sheet → Vraie App | Bader EK</title>
 <meta name="description" content="Transformez votre Google Sheet en application web professionnelle en 48h. Fini les erreurs de saisie, les accès multiples chaotiques et les formules cassées.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMJZVH80K8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SMJZVH80K8');
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -114,13 +122,13 @@
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="text-4xl font-black mb-4">Prêt à transformer votre Sheet ?</h2>
     <p class="text-blue-200 mb-10">Décrivez-moi votre Sheet en quelques lignes. Je vous réponds avec une proposition en moins de 2h.</p>
-    <form class="bg-white/10 backdrop-blur rounded-2xl p-8 text-left space-y-5">
-      <div><label class="text-sm font-medium text-blue-200 block mb-2">Votre nom</label><input type="text" placeholder="Jean Dupont" class="w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-blue-300 focus:outline-none"></div>
-      <div><label class="text-sm font-medium text-blue-200 block mb-2">Votre email</label><input type="email" placeholder="jean@entreprise.fr" class="w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-blue-300 focus:outline-none"></div>
-      <div><label class="text-sm font-medium text-blue-200 block mb-2">Décrivez votre Sheet</label><textarea rows="4" placeholder="Mon Sheet sert à... Le problème principal c'est..." class="w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-blue-300 focus:outline-none resize-none"></textarea></div>
+    <form action="https://formspree.io/f/mgopwbbw" method="POST" class="bg-white/10 backdrop-blur rounded-2xl p-8 text-left space-y-5">
+      <div><label class="text-sm font-medium text-blue-200 block mb-2">Votre nom</label><input type="text" name="nom" placeholder="Jean Dupont" class="w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-blue-300 focus:outline-none" required></div>
+      <div><label class="text-sm font-medium text-blue-200 block mb-2">Votre email</label><input type="email" name="email" placeholder="jean@entreprise.fr" class="w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-blue-300 focus:outline-none" required></div>
+      <div><label class="text-sm font-medium text-blue-200 block mb-2">Décrivez votre Sheet</label><textarea rows="4" name="message" placeholder="Mon Sheet sert à... Le problème principal c'est..." class="w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-blue-300 focus:outline-none resize-none" required></textarea></div>
       <button type="submit" class="w-full btn-primary py-4 rounded-xl font-bold text-lg">Envoyer ma demande →</button>
     </form>
-    <p class="mt-6 text-blue-300 text-sm">Ou contactez-moi directement : <a href="mailto:contact@baderek.fr" class="underline">contact@baderek.fr</a></p>
+    <p class="mt-6 text-blue-300 text-sm">Ou contactez-moi directement : <a href="mailto:elkhamlichi.badreddine@gmail.com" class="underline">elkhamlichi.badreddine@gmail.com</a></p>
   </div>
 </section>
 
